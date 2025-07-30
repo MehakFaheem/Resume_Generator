@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/* Heading */
+.heading {
+    padding: 20px;
+    padding-bottom: 10px;
+    color: rgb(24, 27, 54);
+    font-size: 25px;
+    border-bottom: 2px solid rgb(11, 11, 40);
+    width: 50%;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+/* Resume Container */
+#resume {
+    background-color: rgb(168, 222, 255);
+    width: 50%;
+    max-width: 100%;
+    padding: 20px;
+    height: auto;
+    border: 1px solid rgb(168, 222, 255);
+    box-shadow: 5px 5px 10px rgb(161, 172, 180);
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* General Sections */
+.personal {
+    height: 20px;
+    font-size: 20px;
+    color: rgb(44, 43, 43);
+    text-align: left;
+}
+
+.info, .skills, .experience, .education {
+    text-align: left;
+    color: rgb(44, 43, 43);
+    padding-top: 20px;
+}
+
+/* Input Fields */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: rgb(13, 20, 34);
+    color: white;
+    font-family: century gothic;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+}
+
+/* Button Group */
+.btn-grp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows buttons to move to next line on small screens */
+    gap: 10px;
+}
+
+/* Buttons */
+#edit-form, #print-resume, #share-resume {
+    background-color: rgb(83, 63, 63);
+    color: white;
+    font-family: century gothic;
+    margin: 5px;
+    border-radius: 10px;
+    width: 32%;
+    height: 38px;
+    border: none;
+}
+
+/* Resume Display */
+#display-resume {
+    max-width: 638px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    background-color: rgb(228, 242, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    outline: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 22px;
+        width: 80%;
+    }
+
+    #resume {
+        width: 90%;
+    }
+
+    .btn-grp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #edit-form, #print-resume, #share-resume {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #resume {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .btn-grp {
+        flex-direction: column;
+    }
+
+    #edit-form, #print-resume, #share-resume {
+        width: 100%;
+    }
+}
